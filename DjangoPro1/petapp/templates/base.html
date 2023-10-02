@@ -11,7 +11,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>
-      {% block title %} Modern Business - Start Bootstrap Template {% endblock%}
+      {% block title %} Pet Care {% endblock%}
     </title>
     <!-- Favicon-->
     <link
@@ -39,7 +39,7 @@
             alt=""
           />
 
-          <a class="navbar-brand" href="#">Pet Care</a>
+          <a class="navbar-brand" href="/petapp/home/">Pet Care</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -71,27 +71,40 @@
                   aria-labelledby="navbarDropdownPortfolio"
                 >
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Pet Supplies</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Pet Supplies</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Pet Clinic List</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Pet Clinic List</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Adoption and Rescue</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Adoption and Rescue</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Hosting services</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Hosting services</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Pet grooming</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Pet grooming</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/petapp/serivce/">Pet teaching</a>
+                    <a class="dropdown-item" href="/petapp/serivce/"
+                      >Pet teaching</a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/petapp/news/">News</a></li>
+                <a class="nav-link" href="/petapp/news/">News</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="/petapp/blog/">Blog</a>
               </li>
@@ -100,6 +113,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/petapp/contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://bot.dialogflow.com/b24d28ad-43a7-41d3-890c-62665793b989">dialogflow</a>
               </li>
             </ul>
           </div>
@@ -111,6 +127,26 @@
       <!-- Testimonial section-->
       <!-- Testimonial section-->
       {% endblock %}
+
+      <!-- chatbot by dialogflow-->
+      <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+      <df-messenger
+        project-id="rock-collector-400802"
+        agent-id="74dbdc0a-28b8-4401-bfeb-1ada69cd4c2d"
+        language-code="en">
+        <df-messenger-chat-bubble
+         chat-title="Healthcare">
+        </df-messenger-chat-bubble>
+      </df-messenger>
+      <style>
+        df-messenger {
+          z-index: 999;
+          position: fixed;
+          bottom: 16px;
+          right: 16px;
+        }
+      </style>
+
     </main>
     <!-- Footer-->
     <footer class="bg-dark py-4 mt-auto">
