@@ -26,6 +26,7 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    
   </head>
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
@@ -117,6 +118,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="https://bot.dialogflow.com/b24d28ad-43a7-41d3-890c-62665793b989">dialogflow</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/petapp/clinic_address">Clinic Address</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -131,11 +135,12 @@
       <!-- chatbot by dialogflow-->
       <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
       <df-messenger
+        location="us-central1"
         project-id="rock-collector-400802"
-        agent-id="74dbdc0a-28b8-4401-bfeb-1ada69cd4c2d"
+        agent-id="c8eb943f-4ab2-4d7d-93b9-c657a4c073d0"
         language-code="en">
         <df-messenger-chat-bubble
-         chat-title="Healthcare">
+         chat-title="HealthCare">
         </df-messenger-chat-bubble>
       </df-messenger>
       <style>

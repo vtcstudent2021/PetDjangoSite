@@ -10,4 +10,5 @@ urlpatterns = [
     path('about/', views.about, name='about'), # about page url
     path('contact/', views.contact, name='contact'), # contact page url
     path('dialogflow/', views.dialogflow, name='dialogflow'), # dialogflow page url
+    path('clinic_address/', views.clinic_address, name='clinic_address'), # dialogflow page url
 ]

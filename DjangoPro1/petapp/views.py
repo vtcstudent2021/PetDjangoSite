@@ -22,3 +22,6 @@ def contact(request):
 
 def dialogflow(request):
     return render(request, 'dialogflow.html')
+
+def clinic_address(request):
+    return render(request, 'clinic_address.html')

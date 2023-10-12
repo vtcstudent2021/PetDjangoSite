@@ -74,23 +74,23 @@ WSGI_APPLICATION = 'DjangoPro1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'msql_bellfishwe',
-        'USER': 'msql_bellfishwe',
-        'PASSWORD': 'a6f6e9c169fb5b9f14248639a13e2facba2837b0',
-        'HOST': '2xd.h.filess.io',
-        'PORT': '3307',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'msql_bellfishwe',
+#         'USER': 'msql_bellfishwe',
+#         'PASSWORD': 'a6f6e9c169fb5b9f14248639a13e2facba2837b0',
+#         'HOST': '2xd.h.filess.io',
+#         'PORT': '3307',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
